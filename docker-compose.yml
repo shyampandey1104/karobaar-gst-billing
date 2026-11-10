@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  karobaar-app:
+    build: .
+    container_name: karobaar-gst-billing
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
